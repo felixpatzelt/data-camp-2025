@@ -73,7 +73,7 @@ pip install uv
 
 ### Linux
 
-Run the following shell commands:
+Run the following shell commands (or equivalent if you don't use `apt`):
 
 ```sudo apt install python3 uv```
 
@@ -95,7 +95,9 @@ From the project directory, run
 
 ```uv run marimo edit notebooks```
 
-A browser window will open showing you the main marimo screen. A link to the webpage is also printed out in the terminal.
+A browser window will open showing you the main marimo screen. A link to the webpage is also printed out in shell.
+
+Click on `hello.py` in the "Workspace" section of the page that opened in your browser.
 
 Go to the [getting started](https://docs.marimo.io/getting_started/) section of the marimo documentation to learn more.
 
