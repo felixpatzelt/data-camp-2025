@@ -1,0 +1,23 @@
+[project]
+name = "data-camp-2025-exercises"
+version = "0.1.0"
+description = "Exercises for Data Camp 2025 (excluding internal data)"
+readme = "README.md"
+requires-python = ">=3.13"
+# TODO: some dependencies might not be directly needed, only indirectly for rabot-db-helpers
+dependencies = [
+    "altair>=5.5.0",
+    "marimo>=0.13.10",
+    "matplotlib>=3.10.1",
+    "mypy>=1.15.0",
+    "numpy>=2.2.5",
+    "pandas>=2.2.3",
+    "ruff>=0.11.10",
+]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = ["E501"]
