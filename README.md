@@ -61,7 +61,9 @@ One method is to install [Windows Subsytem for Linux](https://learn.microsoft.co
 #### Without WSL and without admin rights
 Another method is to go to [python.org](https://www.python.org) and download the windows installer for python 3.13.7 (or newer) from the downloads section.
 
-Execute the installer on your computer. Make sure to uncheck "Use admin privileges when installing py.exe", and to check "Add python.exe to PATH". Then click "Install now".
+Execute the installer on your computer. 
+- Make sure to uncheck "Use admin privileges when installing py.exe", and to check "Add python.exe to PATH". 
+- Then click "Install now".
 
 Open windows Powershell (search for it using the start menu), type in the following command, and then press enter to run it:
 
@@ -69,19 +71,26 @@ Open windows Powershell (search for it using the start menu), type in the follow
 pip install uv
 ```
 
+### Linux
+
+Run the following shell commands:
+
+```sudo apt install python3 uv```
+
 ## Working with the example notebooks
 
 ### Find the project directory
 
-First, open a command line terminal (powershell on windows) in the folder that you checked out / downloaded from github (see [above](#checking-out-this-repository).
+First, open the command line ("terminal" on macOS or WSL, powershell on windows if not using WSL) and navigate to the directory that you checked out / downloaded from github (see [above](#checking-out-this-repository).
 
 Using **macOS** and **Linux**, you can type `ls` and hit enter to list the files in the current directory and `pwd` to see where you are. You can change the current directory using the `cd` command. Note for old-school mac users: a directory is the same thing as a folder. 
 
-Using **Windows** Powershell, you can type `dir` and hit enter to list the files in the current directory and `cd` to change the directory.
+Using **Windows Powershell**, you can type `dir` and hit enter to list the files in the current directory and `cd` to change the directory.
 
-**Example**: you type `cd Documents/data-camp-2025` if you are now one level above Documents and put the data-camp files inside your Documents directory. 
+**Example**: type `cd Documents/data-camp-2025` if you are now one level above Documents and put the data-camp files inside your Documents directory. 
 
 ### Start marimo
+
 From the project directory, run
 
 ```uv run marimo edit notebooks```
