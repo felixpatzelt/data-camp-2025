@@ -104,7 +104,7 @@ def _(pd):
         return sales_report
 
 
-    sales_report = get_sales_report("../sales_report_subset.csv.zip")
+    sales_report = get_sales_report("data/1_churn_rates_dummy_data.csv")
     sales_report
     return (sales_report,)
 
@@ -247,11 +247,6 @@ def _(run_button, sales_report, sample_size_slider):
     _axis = _plot_df["mean"].plot.bar(yerr=2 * _plot_df["sem"])
     _axis.set_ylabel("Mean Churn Rate ± 2 SEM")
     _axis
-    return
-
-
-@app.cell
-def _():
     return
 
 
